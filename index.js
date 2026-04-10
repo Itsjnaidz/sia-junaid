@@ -7,11 +7,8 @@ app.use(cors());
 app.use(express.json());
 
 // Dataset: Static Array of Students
-let students = [
-    { id: 1, name: "Salman Mutalib", yearLevel: "2" },
-    { id: 2, name: "John Doe", yearLevel: "1" },
-    { id: 3, name: "Jane Smith", yearLevel: "3" }
-];
+// Dataset: Static Array of Students
+let students = [];
 
 // --- 10 UNIQUE API ENDPOINTS (Updated for Students) ---
 
