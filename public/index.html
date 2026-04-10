@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Web App</title>
+    <style>
+        /* Forces the default classic browser look */
+        body { 
+            font-family: "Times New Roman", Times, serif; 
+            background-color: white; 
+            color: black; 
+            padding: 10px;
+        }
+        input, button {
+            margin-right: 5px;
+        }
+        #studentList {
+            margin-top: 15px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Students</h1>
+    
+    <button id="displayBtn">Display Students</button>
+    <div id="studentList"></div>
+
+    <br>
+
+    <h1>ADD STUDENT</h1>
+
+    <form id="addForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="yearLevel" placeholder="Year Level" required>
+        <button type="submit">submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
