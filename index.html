@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Characters DB</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f9;}
+        .card { background: white; padding: 15px; margin-bottom: 10px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        form { background: white; padding: 20px; border-radius: 5px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
+        input, button { padding: 8px; margin-right: 5px; margin-bottom: 10px; }
+        button { background: #007bff; color: white; border: none; cursor: pointer; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <h1>Game Characters Database</h1>
+
+    <form id="addForm">
+        <h3>Add New Character</h3>
+        <input type="text" id="name" placeholder="Name (e.g. Reyna)" required>
+        <input type="text" id="role" placeholder="Role (e.g. Duelist)" required>
+        <input type="text" id="difficulty" placeholder="Difficulty (e.g. Medium)" required>
+        <button type="submit">Add to API</button>
+    </form>
+
+    <div id="statsBox"></div>
+    <h3>Character List</h3>
+    <div id="characterList">Loading from API...</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
